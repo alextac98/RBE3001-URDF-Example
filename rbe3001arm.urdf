@@ -1,0 +1,60 @@
+<robot name="RBE3001Arm">
+
+    <link name="baselink">
+        <visual>
+            <geometry>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <mesh filename="CAD/Link0.stl"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <link name="link1">
+        <visual>
+            <geometry>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <mesh filename="CAD/Link1.stl"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <link name="link2">
+        <visual>
+            <geometry>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <mesh filename="CAD/Link2.stl"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <link name="link3">
+        <visual>
+            <geometry>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <mesh filename="CAD/Link3.stl"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <joint name="joint1" type="continuous">
+        <parent link="baselink"/>
+        <child link="link1"/>
+        <axis xyz="0 0 1"/>
+        <origin xyz="0 0 0.065" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="joint2" type="continuous">
+        <parent link="link1"/>
+        <child link="link2"/>
+        <axis xyz="0 0 1"/>
+        <origin xyz="0 0 0.135" rpy="-1.5708 0 0"/>
+    </joint>
+
+    <joint name="joint3" type="continuous">
+        <parent link="link2"/>
+        <child link="link3"/>
+        <axis xyz="0 0 1"/>
+        <origin xyz="0.175 0 0" rpy="0 0 1.5708"/>
+    </joint>
+
+</robot>
