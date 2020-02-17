@@ -1,14 +1,10 @@
-
-
 robot = makeRobot('rbe3001arm.urdf');
 robot_cfg = homeConfiguration(robot);
-dispRobot(robot, robot_cfg);
 
-pause(1.0);
-disp("new config")
-robot_cfg = moveRobot(robot_cfg, pi/4, 0, 0);
-robot_cfg = moveRobot(robot_cfg, -pi/4, 0, 0);
-dispRobot(robot, robot_cfg);
+for i = 1:1:10
+   dispRobot(robot, moveRobot(robot_cfg, pi/i, -pi/i, -pi/i));
+   pause(0.05);
+end
 
 function robot=makeRobot(urdf_loc)
     robot = importrobot(urdf_loc);
