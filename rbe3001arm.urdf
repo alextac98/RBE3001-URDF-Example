@@ -4,7 +4,7 @@
         <visual>
             <geometry>
                 <origin xyz="0 0 0" rpy="0 0 0"/>
-                <mesh filename="CAD/Link0_LowRes.stl"/>
+                <mesh filename="CAD/Link0_lowRes.stl"/>
             </geometry>
         </visual>
     </link>
@@ -13,7 +13,7 @@
         <visual>
             <geometry>
                 <origin xyz="0 0 0" rpy="0 0 0"/>
-                <mesh filename="CAD/Link1_LowRes.stl"/>
+                <mesh filename="CAD/Link1_lowRes.stl"/>
             </geometry>
         </visual>
     </link>
@@ -22,7 +22,7 @@
         <visual>
             <geometry>
                 <origin xyz="0 0 0" rpy="0 0 0"/>
-                <mesh filename="CAD/Link2_LowRes.stl"/>
+                <mesh filename="CAD/Link2_lowRes.stl"/>
             </geometry>
         </visual>
     </link>
@@ -31,7 +31,7 @@
         <visual>
             <geometry>
                 <origin xyz="0 0 0" rpy="0 0 0"/>
-                <mesh filename="CAD/Link3_LowRes.stl"/>
+                <mesh filename="CAD/Link3_lowRes.stl"/>
             </geometry>
         </visual>
     </link>
